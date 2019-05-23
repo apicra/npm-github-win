@@ -3,7 +3,7 @@ set CONTENT=%~1
 ::echo %CONTENT%
 set /p VERSION= < .apicra\.variable\VERSION.txt
 IF "%CONTENT%" == "" set CONTENT=New Version of System v%VERSION%
-set ticket=.apicra\.ticket\v%VERSION%.txt
+set ticket=".apicra\.ticket\v%VERSION%.txt"
 echo %ticket%
 IF not exist %ticket% touch %ticket% || exit
 ::echo %CONTENT% > %ticket%
