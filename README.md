@@ -9,10 +9,14 @@ https://apicra.com/
 Scripts for Development, Using Github, Npmjs, Bash commands (version for windows only), version for linux npm-github-linux
 
 
+## How works Tickets
+
 .ticket
 + v1.0.1.txt
 + v1.0.2.txt
 ...
+
+## How works Variables
 
 .variable
 + homepage.txt
