@@ -4,9 +4,9 @@
 ::set /p "PARAM=test2:"
 set CONTENT=%~1
 ::echo %CONTENT%
-set /p VERSION= < VERSION.txt
+set /p VERSION= < .apicra/.variable/VERSION.txt
 IF "%CONTENT%" == "" set CONTENT=New Version of System v%VERSION%
-echo %CONTENT% >> "Ticket\v%VERSION%.md"
+echo %CONTENT% >> ".ticket\v%VERSION%.txt"
 ::echo %CONTENT%
 ::node -pe "require('./package.json').version" > VERSION.txt &&
 ::npm version patch > VERSION.txt && set /p VERSION= < VERSION.txt && echo %CONTENT% > "Ticket\v%VERSION%.md"
