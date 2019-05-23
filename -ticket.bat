@@ -7,5 +7,4 @@ set ticket=".apicra\.ticket\v%VERSION%.txt"
 echo %ticket%
 IF not exist %ticket% touch %ticket% || exit
 ::echo %CONTENT% > %ticket%
-::
 echo %CONTENT% >> %ticket%
