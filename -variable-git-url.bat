@@ -1,1 +1,1 @@
-npm version patch && node -pe "require('./package.json').github" > .apicra\variable\VERSION.txt
+node -pe "require('./package.json').github" > .apicra\variable\GIT_URL.txt
