@@ -2,6 +2,4 @@
 ::@ECHO OFF
 set PROJECT=%~1
 echo %PROJECT%
-mkdir %PROJECT%
-cd %PROJECT%
-..\.apicra\-apicra-download.bat
+RMDIR /Q/S %PROJECT%
