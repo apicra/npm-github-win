@@ -1,4 +1,4 @@
-# ApiCra
+# ApiCra npm-github-win
 
 [![npm version](https://img.shields.io/npm/v/apicra.svg?style=flat-square)](https://www.npmjs.org/package/apicra)
 [![build status](https://img.shields.io/travis/apicra/apicra.svg?style=flat-square)](https://travis-ci.org/apicra/apicra)
@@ -10,20 +10,24 @@
 
 
 Api Creator it's DevopsTool with command line for NPMJS packages, connected with Github on Windows OS
++ Scripts for Development
++ Github
++ Npmjs
++ Bash commands (version for windows only), version for linux npm-github-linux
+
 https://apicra.com/
 
 
 ## Features
 #### Publishing
-- Commit, push to github and publish on nodejs.com package with one command:
-
-    -publish.bat
+Commit, push to github and publish on nodejs.com package with one command:
+```-publish.bat```
 
 #### Versioning
-- by file package.json, Apicra is supporting tags versioning on Github and npmjs
+by file package.json, Apicra is supporting tags versioning on Github and npmjs
 
 #### Tickets
-- Apicra is supporting tickets for versioning, so you have possibility to generate logs, history of your each version
+Apicra is supporting tickets for versioning, so you have possibility to generate logs, history of your each version
 
 #### Browser Support
 
@@ -31,42 +35,38 @@ https://apicra.com/
 --- | --- | --- | --- | --- | --- |
 Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
 
-[![Browser Matrix](https://saucelabs.com/open_sauce/build_matrix/apicra.svg)](https://saucelabs.com/u/apicra)
-
 
 ## Installing
 
 Using npm:
 
 ```bash
-$ npm install apicra
+npm install apicra
 ```
 
 Using bower:
 
 ```bash
-$ bower install apicra
+bower install apicra
 ```
 
 Using yarn:
 
 ```bash
-$ yarn add apicra
+yarn add apicra
 ```
 
-Using cdn:
+Using chocolate:
 
-```html
-<script src="https://unpkg.com/apicra/dist/apicra.min.js"></script>
+```bash
+choco install apicra
 ```
+
 
 ## Example
 
 
 
-
-# npm-github-win
-Scripts for Development, Using Github, Npmjs, Bash commands (version for windows only), version for linux npm-github-linux
 
 
 ## How works Tickets
