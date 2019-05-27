@@ -120,3 +120,7 @@ All files are copied to folder .apicra
 
 
 from .ticket folder should be crating the  LOG.md file with details about all tickets for main version
+
+
+### Pryzgotować wygląd
+https://github.com/verdaccio/verdaccio
