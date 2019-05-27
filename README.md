@@ -64,10 +64,41 @@ Using chocolate:
 choco install apicra
 ```
 
+### clone testing scripts using git on windows console
 
-## Example
+    git clone https://github.com/apicra/npm-github-win-test.git
 
 
+### install apicra tool on windows using git:
+
+    -apicra-install-by-git.bat
+
+All files are copied to folder .apicra
+
+        mkdir .apicra
+        echo .apicra/ >> .gitignore
+        git clone https://github.com/apicra/npm-github-win.git .apicra
+
+
+### If you need update apicra tool:
+
+    -apicra-update-by-git.bat
+
+
+### Create package.json
+
+    -npm-init-package.bat
+
+### Check a version
+
+    -apicra-version.bat
+
+
+### Create first ticket
+
+    -apicra-ticket.bat
+
+### commit &  push changes to git repository
 
 
 
