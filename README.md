@@ -21,7 +21,9 @@ https://apicra.com/
 ## Features
 #### Publishing
 Commit, push to github and publish on nodejs.com package with one command:
-```-publish.bat```
+```bash
+-publish.bat
+```
 
 #### Versioning
 by file package.json, Apicra is supporting tags versioning on Github and npmjs
