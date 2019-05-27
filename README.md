@@ -1,4 +1,6 @@
-# ApiCra
+# ApiCra, DevopsTool
+Api Creator for  for NPM development
+https://apicra.com/
 
 [![npm version](https://img.shields.io/npm/v/apicra.svg?style=flat-square)](https://www.npmjs.org/package/apicra)
 [![build status](https://img.shields.io/travis/apicra/apicra.svg?style=flat-square)](https://travis-ci.org/apicra/apicra)
@@ -8,18 +10,14 @@
 [![gitter chat](https://img.shields.io/gitter/room/mzabriskie/apicra.svg?style=flat-square)](https://gitter.im/mzabriskie/apicra)
 [![code helpers](https://www.codetriage.com/apicra/apicra/badges/users.svg)](https://www.codetriage.com/apicra/apicra)
 
-Promise based HTTP client for the browser and node.js
 
 ## Features
 
-- Make [XMLHttpRequests](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) from the browser
-- Make [http](http://nodejs.org/api/http.html) requests from node.js
 - Supports the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) API
 - Intercept request and response
 - Transform request and response data
 - Cancel requests
 - Automatic transforms for JSON data
-- Client side support for protecting against [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
 
 ## Browser Support
 
@@ -58,9 +56,6 @@ Using cdn:
 ## Example
 
 
-Api Creator, DevopsTool for NPM development
-
-https://apicra.com/
 
 
 # npm-github-win
