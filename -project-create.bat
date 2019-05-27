@@ -3,9 +3,9 @@
 set PROJECT=%~1
 mkdir %PROJECT%
 cd %PROJECT%
-..\.apicra\-apicra-download.bat
 ::@ECHO ON
-echo # %PROJECT% >> README.md
-echo # Licence >> LICENCE.md
-echo Project: %PROJECT% is Created
+echo # %PROJECT% > README.md
+echo # Licence > LICENCE.md
+..\.apicra\-apicra-download.bat
+echo Project: "%PROJECT%" is Created
 dir
