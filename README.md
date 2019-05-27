@@ -1,5 +1,5 @@
-# ApiCra, DevopsTool
-Api Creator for  for NPM development
+# ApiCra
+Api Creator it's DevopsTool with command line for NPMJS packages, connected with Github on Windows OS
 https://apicra.com/
 
 [![npm version](https://img.shields.io/npm/v/apicra.svg?style=flat-square)](https://www.npmjs.org/package/apicra)
@@ -12,20 +12,25 @@ https://apicra.com/
 
 
 ## Features
+#### Publishing
+- Commit, push to github and publish on nodejs.com package with one command:
 
-- Supports the [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) API
-- Intercept request and response
-- Transform request and response data
-- Cancel requests
-- Automatic transforms for JSON data
+    -publish.bat
 
-## Browser Support
+#### Versioning
+- by file package.json, Apicra is supporting tags versioning on Github and npmjs
+
+#### Tickets
+- Apicra is supporting tickets for versioning, so you have possibility to generate logs, history of your each version
+
+#### Browser Support
 
 ![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) |
 --- | --- | --- | --- | --- | --- |
 Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11 ✔ |
 
 [![Browser Matrix](https://saucelabs.com/open_sauce/build_matrix/apicra.svg)](https://saucelabs.com/u/apicra)
+
 
 ## Installing
 
