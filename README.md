@@ -1,6 +1,4 @@
 # ApiCra
-Api Creator it's DevopsTool with command line for NPMJS packages, connected with Github on Windows OS
-https://apicra.com/
 
 [![npm version](https://img.shields.io/npm/v/apicra.svg?style=flat-square)](https://www.npmjs.org/package/apicra)
 [![build status](https://img.shields.io/travis/apicra/apicra.svg?style=flat-square)](https://travis-ci.org/apicra/apicra)
@@ -9,6 +7,10 @@ https://apicra.com/
 [![npm downloads](https://img.shields.io/npm/dm/apicra.svg?style=flat-square)](http://npm-stat.com/charts.html?package=apicra)
 [![gitter chat](https://img.shields.io/gitter/room/mzabriskie/apicra.svg?style=flat-square)](https://gitter.im/mzabriskie/apicra)
 [![code helpers](https://www.codetriage.com/apicra/apicra/badges/users.svg)](https://www.codetriage.com/apicra/apicra)
+
+
+Api Creator it's DevopsTool with command line for NPMJS packages, connected with Github on Windows OS
+https://apicra.com/
 
 
 ## Features
