@@ -93,3 +93,49 @@ recreating
     RMDIR /Q/S projectname
     RMDIR /Q/S .apicra && git clone https://github.com/apicra/npm-github-win.git .apicra
     .apicra\-project-create.bat "tom-sapletta-com" "projectname"
+
+
+
+## Prepapring and testing shortcut for create project:
+before:
+    .apicra\-project-create.bat "tom-sapletta-com" "projectname"
+
+now:
+    -create.bat "tom-sapletta-com" "projectname"
+
+
+Create file
+
+    echo set GIT_USER=%~1 > -create.bat && echo set PROJECT=%~2 >> -create.bat && echo .apicra\-project-create.bat ^%GIT_USER^% ^%PROJECT^% >> -create.bat
+
+Read file
+
+    type -create.bat 2>nul
+
+
+Delete file
+
+    del /f -create.bat
+
+
+
+## Prepapring and testing shortcut for delete project:
+before:
+    .apicra\-project-delete.bat "tom-sapletta-com" "projectname"
+
+now:
+    -delete.bat "tom-sapletta-com" "projectname"
+
+
+Create file
+
+    echo set GIT_USER=%~1 > -delete.bat && echo set PROJECT=%~2 >> -delete.bat && echo .apicra\-project-delete.bat ^%GIT_USER^% ^%PROJECT^% >> -delete.bat
+
+Read file
+
+    type -delete.bat 2>nul
+
+
+Delete file
+
+    del /f -delete.bat
