@@ -16,7 +16,7 @@ or in powershell, cygwin, ...
 
 OR REMOVE
 
-    .apicra\-apicra-remove.bat
+    .apicra\-apicra-delete.bat
     RMDIR /Q/S .apicra
 
 
@@ -29,7 +29,7 @@ OR REMOVE
 OR REMOVE the Project:
 
     cd  %USERPROFILE%\WebstormProjects
-    .apicra\-project-remove.bat "projectname"
+    .apicra\-project-delete.bat "tom-sapletta-com" "projectname"
 
 Script is doing steps:
 + download .apicra to the project folder
