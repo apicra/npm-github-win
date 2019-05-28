@@ -22,3 +22,5 @@ git push -u origin master
 git remote -v
 :: https://curl.haxx.se/windows/
 :: https://curl.haxx.se/windows/dl-7.65.0/curl-7.65.0-win32-mingw.zip
+.apicra\-open-git-url.bat
+.apicra\-apicra-download.bat
