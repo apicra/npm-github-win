@@ -9,19 +9,17 @@ set PROJECT=%~2
 set /P DESCRIPTION= < ..\.apicra\variable\DESCRIPTION.txt
 ::set GIT_USER=tom-sapletta-com
 ..\.apicra\curl-7.65.0-win32-mingw\bin\curl.exe -u "%GIT_USER%" https://api.github.com/user/repos -d "{\"name\":\"%PROJECT%\", \"description\":\"%DESCRIPTION%\"}"
-..\.apicra\-apicra-download.bat
 git init
 git add .
 ::git checkout -t -b develop origin/develop
 git commit -m "initial project version"
 ::# Sets the new remote
 set GIT_URL=https://github.com/%GIT_USER%/%PROJECT%.git
-echo %GIT_URL% > .apicra\variable\GIT_URL.txt
+:: echo %GIT_URL% > .apicra\variable\GIT_URL.txt
 git remote add origin %GIT_URL%
 ::# Pushes the changes in your local repository up to the remote repository you specified as the origin
 git push -u origin master
 git remote -v
-:: https://curl.haxx.se/windows/
-:: https://curl.haxx.se/windows/dl-7.65.0/curl-7.65.0-win32-mingw.zip
-.apicra\-open-git-url.bat
-
+:: .apicra\-open-git-url.bat
+..\.apicra\-open-git-url.bat
+..\.apicra\-apicra-download.bat
