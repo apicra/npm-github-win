@@ -161,7 +161,8 @@ https://github.com/apicra/win-ticket-version-flow
 
 
 Nazwa: Ticket - Version flow bierze się z 2 etapowego rozwoju aplikacji
-tą komendą tworzy się kolejne zadanie, które wchodzi wskład aktualnej wersji
+Komendą -ticket.bat tworzy się opis zadania, które wchodzi w skład aktualnej wersji, każy "ticket" jest zapisywany do pliku z numerem wersji w folderze /ticket
+wszystkie zadania są publikowane przy każdej aktualizacji wersji (w następnym kroku)
 
     -ticket.bat "nazwa zadania"
 
