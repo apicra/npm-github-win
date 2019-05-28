@@ -21,5 +21,8 @@ git remote add origin %GIT_URL%
 git push -u origin master
 git remote -v
 :: .apicra\-open-git-url.bat
+mkdir .apicra
+echo .apicra/ >> .gitignore
+git clone https://github.com/apicra/npm-github-win.git .apicra
 ..\.apicra\-open.bat %GIT_URL%
-..\.apicra\-apicra-download.bat
+::..\.apicra\-apicra-download.bat
