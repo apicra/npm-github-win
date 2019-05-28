@@ -11,7 +11,7 @@ git commit -m "initial project version"
 set GIT_USER=%~1
 set PROJECT=%~2
 ::set GIT_USER=tom-sapletta-com
-.\curl-7.65.0-win32-mingw\bin\curl.exe -u "%GIT_USER%" https://api.github.com/user/repos -d "{\"name\":\"%PROJECT%\"}"
+..\.apicra\curl-7.65.0-win32-mingw\bin\curl.exe -u "%GIT_USER%" https://api.github.com/user/repos -d "{\"name\":\"%PROJECT%\"}"
 
 
 ::# Pushes the changes in your local repository up to the remote repository you specified as the origin
