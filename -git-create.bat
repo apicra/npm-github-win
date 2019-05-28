@@ -21,5 +21,5 @@ git remote add origin %GIT_URL%
 git push -u origin master
 git remote -v
 :: .apicra\-open-git-url.bat
-..\.apicra\-open-git-url.bat
+..\.apicra\-open.bat %GIT_URL%
 ..\.apicra\-apicra-download.bat
