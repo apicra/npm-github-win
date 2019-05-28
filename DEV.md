@@ -139,3 +139,8 @@ Read file
 Delete file
 
     del /f -delete.bat
+
+
+## Info about command line on windows OS
+
+http://www.ee.pw.edu.pl/~tomzdun/zajecia/soisk_l/1.%20DOS%20-%20Linia%20komend.pdf
