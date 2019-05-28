@@ -201,8 +201,8 @@ oraz na możliwość późniejszej rozbudowy o kolejnych dystrybutorów paczek, 
 
 #### Wsparcie projektu
 Jeśli uważasz, że projekt jest ciekawy a nawet wypróbowałeś go i przydał się w Twoim projekcie,
-lub przeciwnie nie spełnia oczekiwań lub zawiera błędy, to zachęcam do kontaktu email, lub tutaj
-każdy zalogowany użzytkownik github może stworzyć ticket dla projektu i zgłosić uwagi.
+lub przeciwnie nie spełnia oczekiwań lub zawiera błędy, to zachęcam do kontaktu na stronie projektu github.
+Każdy zalogowany użzytkownik github może stworzyć ticket dla projektu i zgłosić uwagi.
 
 Finansowe wsparcie nie jest obecnie przewidziane, ale pojawi się taka możliwość pod koniec roku 2019
 
