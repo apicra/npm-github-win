@@ -12,4 +12,5 @@ echo # Licence > LICENCE.md
 ..\.apicra\-git-create.bat %GIT_USER% %PROJECT%
 echo Project: "%PROJECT%" is Created
 ..\.apicra\-apicra-download.bat
+..\.apicra\-open-git-url.bat
 dir
