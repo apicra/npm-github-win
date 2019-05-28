@@ -1,2 +1,2 @@
-RMDIR /Q/S .apicra
+RMDIR /Q /S .apicra
 dir

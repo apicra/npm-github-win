@@ -17,7 +17,7 @@ or in powershell, cygwin, ...
 OR REMOVE
 
     .apicra\-apicra-delete.bat
-    RMDIR /Q/S .apicra
+    RMDIR /Q /S .apicra
 
 
 

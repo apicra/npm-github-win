@@ -10,7 +10,7 @@ set PROJECT=%~2
 set ORG=
 set PROJ_FOLDER=%PROJECT%
 ) else (
-set PROJ_FOLDER=%PROJECT%-%ORG%
+set PROJ_FOLDER=%ORG%-%PROJECT%
 )
 ::echo %ORG%
 ::echo %PROJECT%
