@@ -7,7 +7,7 @@ cd %PROJECT%
 ::@ECHO ON
 echo # %PROJECT% > README.md
 echo # Licence > LICENCE.md
--git-create.bat %GIT_USER% %PROJECT%
+..\.apicra\-git-create.bat %GIT_USER% %PROJECT%
 echo Project: "%PROJECT%" is Created
 ..\.apicra\-apicra-download.bat
 dir
