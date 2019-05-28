@@ -26,10 +26,19 @@ OR REMOVE
     cd  %USERPROFILE%\WebstormProjects
     .apicra\-project-create.bat "tom-sapletta-com" "projectname"
 
+*for organisation
+
+    .apicra\-project-create.bat "tom-sapletta-com" "apicra/projectname"
+
 OR REMOVE the Project:
 
     cd  %USERPROFILE%\WebstormProjects
     .apicra\-project-delete.bat "tom-sapletta-com" "projectname"
+
+*for organisation
+
+    .apicra\-project-delete.bat "tom-sapletta-com" "apicra/projectname"
+
 
 Script is doing steps:
 + download .apicra to the project folder
