@@ -89,4 +89,4 @@ https://curl.haxx.se/windows/dl-7.65.0/curl-7.65.0-win32-mingw.zip
 ## TESTING
 recreating
 
-    .apicra\-project-remove.bat "projectname" && RMDIR /Q/S .apicra && git clone https://github.com/apicra/npm-github-win.git .apicra && .apicra\-project-create.bat "tom-sapletta-com" "projectname"
+    .apicra\-project-delete.bat "tom-sapletta-com" "projectname" && RMDIR /Q/S .apicra && git clone https://github.com/apicra/npm-github-win.git .apicra && .apicra\-project-create.bat "tom-sapletta-com" "projectname"

@@ -1,8 +1,7 @@
 :: create git repo
 :: cd project folder
-
 ::# Verifies the new remote URL
-::git remote -v
+
 ::curl -u 'tom-sapletta-com' https://api.github.com/user/repos -d "{\"name\":\"%PROJECT%\"}"
 ::-curl.bat -u 'tom-sapletta-com' https://api.github.com/user/repos -d "{\"name\":\"%PROJECT%\"}"
 set GIT_USER=%~1
@@ -15,8 +14,12 @@ git add .
 ::git checkout -t -b develop origin/develop
 git commit -m "initial project version"
 ::# Sets the new remote
-git remote add origin https://github.com/%GIT_USER%/%PROJECT%.git
+set GIT_URL=https://github.com/%GIT_USER%/%PROJECT%.git
+echo %GIT_URL% > .apicra\variable\GIT_URL.txt
+git remote add origin %GIT_URL%
 ::# Pushes the changes in your local repository up to the remote repository you specified as the origin
 git push -u origin master
+git remote -v
 :: https://curl.haxx.se/windows/
 :: https://curl.haxx.se/windows/dl-7.65.0/curl-7.65.0-win32-mingw.zip
+-open-git-url.bat
