@@ -54,7 +54,10 @@ Script is doing steps:
 ## Short way to share your changes in code
 + prepare your changes and use:
 
-    ..\-add.bat "name of ticket"
+    ..\-ticket.bat "name of ticket"
+
++commit + push
+
 
 Script is doing steps:
 + Create Ticket+ commit and pull changes to git with ticket message
@@ -62,7 +65,11 @@ Script is doing steps:
 ## Publish new version
 publish new on github and npmjs
 
-    -publish.bat
+    -version.bat
+
+OR
+
+    -version.bat minor/major
 
 
 ::echo %CONTENT%
@@ -96,18 +103,29 @@ https://curl.haxx.se/windows/dl-7.65.0/curl-7.65.0-win32-mingw.zip
 
 
 ## TESTING
-recreating
+### .apicra
+Create
+    git clone https://github.com/apicra/npm-github-win.git .apicra
 
-    .apicra\-project-delete.bat "tom-sapletta-com" "projectname"
-    RMDIR /Q/S projectname
-    RMDIR /Q/S .apicra && git clone https://github.com/apicra/npm-github-win.git .apicra
+Delete
+    RMDIR /Q/S .apicra
+
+
+### project
+Create
+
     .apicra\-project-create.bat "tom-sapletta-com" "projectname"
 
+Delete
+
+    .apicra\-project-delete.bat "tom-sapletta-com" "projectname"
+OR
+    RMDIR /Q/S projectname
 
 
 ## Prepapring and testing shortcut for create project:
 before:
-    .apicra\-project-create.bat "tom-sapletta-com" "projectname"
+    .apicra\-project-create.bat "tom-sapletta-com" "apicra/win-ticket-version-flow"
 
 now:
     -create.bat "tom-sapletta-com" "projectname"
