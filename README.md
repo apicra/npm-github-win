@@ -124,3 +124,8 @@ from .ticket folder should be crating the  LOG.md file with details about all ti
 
 ### Pryzgotować wygląd
 https://github.com/verdaccio/verdaccio
+
+### Dependencies
+
+curl-7.65.0-win32-mingw
+
