@@ -5,6 +5,6 @@
 
 
 ## INSTALL in .apicra
--apicra-module.bat npmjs
--apicra-module.bat wordpress
--apicra-module.bat docker
+-module.bat i npmjs
+-module.bat i wordpress
+-module.bat i docker
