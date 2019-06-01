@@ -71,14 +71,14 @@ GOTO end
 :create
 if "%USER%"=="" GOTO user_empty
 if "%PROJECT%"=="" GOTO project_empty
--%CMD%-create.bat %USER% %PROJECT%
+.apicra\%CMD%\create.bat %USER% %PROJECT%
 echo %PROJECT% is created
 GOTO end
 ::::::::::::::
 :delete
 if "%USER%"=="" GOTO user_empty
 if "%PROJECT%"=="" GOTO project_empty
--%CMD%-delete.bat %USER% %PROJECT%
+.apicra\%CMD%\delete.bat %USER% %PROJECT%
 echo %PROJECT% is deleted
 GOTO end
 ::::::::::::::

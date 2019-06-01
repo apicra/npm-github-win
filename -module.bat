@@ -55,6 +55,7 @@ GOTO end
 if "%MODULE%"=="" GOTO model_empty
 ::mkdir .apicra
 ::echo model/%MODULE%/ >> .gitignore
+echo "" > .apicra\variable\%MODULE%.txt
 git clone https://github.com/apicra/%OS%-%MODULE%.git .apicra\module\%MODULE% && echo %MODULE% is installed
 GOTO end
 ::::::::::::::
@@ -68,7 +69,8 @@ GOTO end
 :remove
 if "%MODULE%"=="" GOTO model_empty
 IF NOT EXIST %MODULE_PATH% GOTO model_not_exist
-RMDIR /Q /S .apicra\module\%MODULE% && echo %MODULE% is deleted
+RMDIR /Q /S .apicra\module\%MODULE% && echo %MODULE% module folder is deleted
+del /f .apicra\variable\%MODULE%.txt && echo %MODULE% config file is deleted
 GOTO end
 ::::::::::::::
 :model_not_exist
