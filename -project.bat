@@ -19,9 +19,12 @@ if "%PARAM%"=="exist" GOTO exist
 :: Name
 if "%PARAM%"=="n" GOTO name
 if "%PARAM%"=="name" GOTO name
-:: Install
-if "%PARAM%"=="i" GOTO install
-if "%PARAM%"=="install" GOTO install
+:: Install Module
+if "%PARAM%"=="im" GOTO install_module
+if "%PARAM%"=="install-module" GOTO install_module
+:: Remove Module
+if "%PARAM%"=="rm" GOTO remove_module
+if "%PARAM%"=="remove-module" GOTO remove_module
 :: Create
 if "%PARAM%"=="c" GOTO create
 if "%PARAM%"=="create" GOTO create
@@ -55,11 +58,13 @@ IF EXIST "project\%CMD%.txt" (
 )
 GOTO end
 ::::::::::::::
-:install
-::if "%USER%"=="" GOTO user_empty
-::if "%PROJECT%"=="" GOTO project_empty
-::/module/%CMD%/install.bat %USER% %PROJECT%
+:install_module
 .apicra\-module.bat install %CMD%
+echo %CMD% is installed
+GOTO end
+::::::::::::::
+:remove_module
+.apicra\-module.bat remove %CMD%
 echo %CMD% is installed
 GOTO end
 ::::::::::::::
