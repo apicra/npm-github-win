@@ -10,7 +10,7 @@ IF EXIST "project\%CMD%.txt" (
 ) ELSE (
 ::    echo "" > project\%CMD%.txt
 ::    set PROJECT_VAR = < project\%CMD%.txt
-::    ECHO Variable file: 'project\%CMD%.txt' not found
+    ECHO Variable file: 'project\%CMD%.txt' not found
 )
 ::::::::::::::
 :: Exist
