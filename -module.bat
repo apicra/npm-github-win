@@ -55,7 +55,7 @@ GOTO end
 if "%MODULE%"=="" GOTO model_empty
 ::mkdir .apicra
 ::echo model/%MODULE%/ >> .gitignore
-git clone https://github.com/apicra/%OS%-%MODULE%.git .\apicra\module\%MODULE% && echo %MODULE% is installed
+git clone https://github.com/apicra/%OS%-%MODULE%.git .apicra\module\%MODULE% && echo %MODULE% is installed
 GOTO end
 ::::::::::::::
 :update
