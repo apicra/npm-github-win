@@ -7,6 +7,7 @@ set OS=win
 set APICRA_PATH=.apicra
 set CMD=.apicra.bat
 set NAME=Apicra
+set APICRA_CONFIG=apicra.txt
 :: get Variable from File
 IF "%PARAM%"=="" GOTO help
 ::::::::::::::
@@ -45,6 +46,7 @@ IF EXIST ".apicra" (
 GOTO end
 ::::::::::::::
 :reinstall
+echo "Do you really wan't delete the whole apicra modules and projects?
 RMDIR /Q/S .apicra && echo %NAME% folder is deleted
 del /f apicra.txt && echo %NAME% config file is deleted
 GOTO install
@@ -52,18 +54,28 @@ GOTO install
 :install
 IF NOT "%MODULE%"=="" GOTO install_module
 IF EXIST %APICRA_PATH% (
-    ECHO %NAME% exist
+    IF EXIST %APICRA_CONFIG% GOTO install_module_from_config
     GOTO help
 )
 git clone https://github.com/apicra/npm-github-win.git .apicra && echo %NAME% is installed
-GOTO config
+IF EXIST %APICRA_CONFIG% (
+    ECHO Install All modules from config file %APICRA_CONFIG%
+    GOTO install_module_from_config
+) ELSE (
+    GOTO config
+)
 ::::::::::::::
 :install_module
-.apicra/-module.bat install %MODULE%
+.apicra\-module.bat install_file %MODULE%
+GOTO end
+::::::::::::::
+:install_module_from_config
+for /f "delims==" %%a in (%APICRA_CONFIG%) do .apicra\-module.bat install %%a
 GOTO end
 ::::::::::::::
 :config
-echo github > apicra.txt
+IF EXIST %APICRA_CONFIG% GOTO end
+echo github > %APICRA_CONFIG% && echo apicra.txt config file is created
 GOTO end
 ::::::::::::::
 :update
@@ -76,8 +88,10 @@ IF NOT EXIST %APICRA_PATH% (
     ECHO Apicra not exist
     GOTO help
 )
+echo "Do you really wan't delete the whole apicra modules and projects?
+pause
 RMDIR /Q/S .apicra && echo %NAME% folder is deleted
-del /f apicra.txt && echo %NAME% config file is deleted
+::del /f apicra.txt && echo %NAME% config file is deleted
 GOTO end
 ::::::::::::::
 :delete_module
