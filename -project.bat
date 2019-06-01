@@ -8,7 +8,9 @@ set PROJECT=%~4
 IF EXIST "project\%CMD%.txt" (
     set PROJECT_VAR = < project\%CMD%.txt
 ) ELSE (
-    ECHO Variable file: 'project\%CMD%.txt' not found
+::    echo "" > project\%CMD%.txt
+::    set PROJECT_VAR = < project\%CMD%.txt
+::    ECHO Variable file: 'project\%CMD%.txt' not found
 )
 ::::::::::::::
 :: Exist
@@ -57,7 +59,7 @@ GOTO end
 ::if "%USER%"=="" GOTO user_empty
 ::if "%PROJECT%"=="" GOTO project_empty
 ::/module/%CMD%/install.bat %USER% %PROJECT%
--module.bat install %CMD%
+.apicra\-module.bat install %CMD%
 echo %CMD% is installed
 GOTO end
 ::::::::::::::
