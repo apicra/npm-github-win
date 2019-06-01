@@ -58,6 +58,13 @@ if "%MODULE%"=="" GOTO model_empty
 git clone https://github.com/apicra/%OS%-%MODULE%.git module\%MODULE% && echo %MODULE% is installed
 GOTO end
 ::::::::::::::
+:update
+if "%MODULE%"=="" GOTO model_empty
+::mkdir .apicra
+::echo model/%MODULE%/ >> .gitignore
+git -C module\%MODULE% pull origin master && echo %MODULE% is installed
+GOTO end
+::::::::::::::
 :remove
 if "%MODULE%"=="" GOTO model_empty
 IF NOT EXIST %MODULE_PATH% GOTO model_not_exist

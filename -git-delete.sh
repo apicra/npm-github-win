@@ -1,1 +1,0 @@
-# DELETE /repos/:owner/:repo

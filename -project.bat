@@ -17,6 +17,9 @@ if "%PARAM%"=="exist" GOTO exist
 :: Name
 if "%PARAM%"=="n" GOTO name
 if "%PARAM%"=="name" GOTO name
+:: Install
+if "%PARAM%"=="i" GOTO install
+if "%PARAM%"=="install" GOTO install
 :: Create
 if "%PARAM%"=="c" GOTO create
 if "%PARAM%"=="create" GOTO create
@@ -48,6 +51,14 @@ IF EXIST "project\%CMD%.txt" (
 ) ELSE (
 ::    ECHO false
 )
+GOTO end
+::::::::::::::
+:install
+::if "%USER%"=="" GOTO user_empty
+::if "%PROJECT%"=="" GOTO project_empty
+::/module/%CMD%/install.bat %USER% %PROJECT%
+-module.bat install %CMD%
+echo %CMD% is installed
 GOTO end
 ::::::::::::::
 :create
