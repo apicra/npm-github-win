@@ -57,6 +57,17 @@ if "%MODULE%"=="" GOTO model_empty
 ::echo model/%MODULE%/ >> .gitignore
 echo "" > .apicra\variable\%MODULE%.txt
 git clone https://github.com/apicra/%OS%-%MODULE%.git .apicra\module\%MODULE% && echo %MODULE% is installed
+set APICRA_CONFIG=.apicra\module\%MODULE%\apicra.txt
+::install_module_from_config
+IF EXIST %APICRA_CONFIG% (
+    ECHO Install All modules from config file %APICRA_CONFIG%
+    GOTO install_module_from_config
+) ELSE (
+    GOTO end
+)
+::::::::::::::
+:install_module_from_config
+for /f "delims==" %%a in (%APICRA_CONFIG%) do .apicra\-module.bat install %%a
 GOTO end
 ::::::::::::::
 :update
