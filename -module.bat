@@ -54,8 +54,8 @@ IF EXIST ".apicra\module\%MODULE%.txt" (
 GOTO end
 ::::::::::::::
 :install
-echo ::::::::::::::
-echo :: Install
+echo ::::::::::::::::::::::::::::
+echo :: Install :: %MODULE%
 if "%MODULE%"=="" GOTO model_empty
 ::mkdir .apicra
 ::echo model/%MODULE%/ >> .gitignore
@@ -76,8 +76,8 @@ for /f "delims==" %%a in (%APICRA_CONFIG%) do .apicra\-module.bat install %%a
 GOTO end
 ::::::::::::::
 :update
-echo ::::::::::::::
-echo :: Update
+echo ::::::::::::::::::::::::::::
+echo :: Update :: %MODULE%
 if "%MODULE%"=="" GOTO model_empty
 ::mkdir .apicra
 ::echo model/%MODULE%/ >> .gitignore
@@ -85,8 +85,8 @@ git -C .apicra\module\%MODULE% pull origin master && echo %MODULE% is installed
 GOTO end
 ::::::::::::::
 :delete
-echo ::::::::::::::
-echo :: Delete
+echo ::::::::::::::::::::::::::::
+echo :: Delete :: %MODULE%
 if "%MODULE%"=="" GOTO model_empty
 IF NOT EXIST %MODULE_PATH% GOTO model_not_exist
 RMDIR /Q /S .apicra\module\%MODULE% && echo %MODULE% module folder is deleted
