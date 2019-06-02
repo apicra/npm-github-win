@@ -18,8 +18,8 @@ IF EXIST %MODULE_PATH% (
 if "%PARAM%"=="i" GOTO install
 if "%PARAM%"=="install" GOTO install
 :: remove
-if "%PARAM%"=="r" GOTO remove
-if "%PARAM%"=="remove" GOTO remove
+::if "%PARAM%"=="r" GOTO remove
+::if "%PARAM%"=="remove" GOTO remove
 if "%PARAM%"=="d" GOTO remove
 if "%PARAM%"=="delete" GOTO remove
 :: update
