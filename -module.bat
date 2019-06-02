@@ -4,6 +4,8 @@ set PARAM=%~1
 set MODULE=%~2
 set OS=win
 set MODULE_PATH=.apicra\module\%MODULE%
+set APICRA_CONFIG=.apicra\module\%MODULE%\apicra.txt
+set VARIABLE_PATH=.apicra\variable\%MODULE%.txt
 :: get Variable from File
 IF "%MODULE%"=="" GOTO help
 IF EXIST %MODULE_PATH% (
@@ -57,11 +59,9 @@ if "%MODULE%"=="" GOTO model_empty
 ::echo model/%MODULE%/ >> .gitignore
 git clone https://github.com/apicra/%OS%-%MODULE%.git .apicra\module\%MODULE% && echo %MODULE% is installed
 :: Create config file
-set VARIABLE_PATH=variable\%MODULE%.txt
 echo " " > %VARIABLE_PATH%
 IF EXIST %VARIABLE_PATH% echo %MODULE% is installed
 ::install_module_from_config
-set APICRA_CONFIG=.apicra\module\%MODULE%\apicra.txt
 IF EXIST %APICRA_CONFIG% (
     ECHO Install All modules from config file %APICRA_CONFIG%
     GOTO install_module_from_config
