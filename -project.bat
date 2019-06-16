@@ -9,6 +9,6 @@ IF NOT EXIST %MODULE_PATH% GOTO path_not_exist
 ::module\%~1\%~2 %~3 %~4
 ::
 :path_not_exist
-echo Path %MODULE_PATH% not exits
+echo :: Apicra :: Project :: Path %MODULE_PATH% not exits
 ::
 :end
