@@ -56,6 +56,7 @@ GOTO end
 :install
 echo ::
 echo :: Install module :: %MODULE%
+echo :: from https://github.com/apicra/%OS%-%MODULE%.git
 echo ::
 if "%MODULE%"=="" GOTO model_empty
 ::mkdir .apicra
