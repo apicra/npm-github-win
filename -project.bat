@@ -1,10 +1,11 @@
 @echo off
 set MODULE_NAME=%~1
 set MODULE_CMD=%~2
+set MODULE_PARAM=%~3
 set MODULE_PATH=.apicra\module\%MODULE_NAME%\-%MODULE_CMD%.bat
 ::
 IF NOT EXIST %MODULE_PATH% GOTO path_not_exist
-%MODULE_PATH%
+%MODULE_PATH% %MODULE_PARAM%
 :end
 ::module\%~1\%~2 %~3 %~4
 ::
